@@ -38,7 +38,7 @@ has_many :user_groups
 |------|----|-------|
 |comment|text|
 |image|string|
-|users_id|integer|null:false,foreign_key: true|
+|user_id|integer|null:false,foreign_key: true|
 ｜group_id|integer|null:false,foreign_key: true|
 ### Association
 belongs_to :user
@@ -49,8 +49,8 @@ belongs_to :group
 |------|----|-------|
 |name|string|null: false|
 ### Association
-belongs_to :comment
-belongs_to :user through:  :user_groups
+has_many :comment
+has_many :users, through: :user_groups
 has_many :user_groups
 
 ## users_groupsテーブル
