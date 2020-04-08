@@ -32,7 +32,7 @@ Things you may want to cover:
 ### Association
 has_many :comments
 has_many :groups through:  :user_groups
-has_many :user_groups
+has_many :user_groups 
 
 ## commentsテーブル
 |Column|Type|Options|
