@@ -9,6 +9,7 @@
     width: 300px;
     height: 100vh;
     float: left;
+    color: white;
     .side-header {
       width: 300px;
       height: 100px;
@@ -24,22 +25,22 @@
         justify-content: space-between;
         font-weight: bold;
         line-height: 20px;
-         .side-header__box__user__name {
+         &__user__name {
            color: #ffffff    
           }
-         .side-header__box__menu {
+         &__menu {
            width: 60px;
            display: flex;
            list-style: none;
            justify-content: flex-end;
-          .side-header__box__menu__new__group{
+            &__menu__new__group {
             a {color: #ffffff;
             }
             .fas fa-edit{
               margin: 0 5 0 0px;
             }
           }
-          .side-header__box__menu__new__edit__user{
+            ＆__menu__new__edit__user {
             a {color: #ffffff;
             }
           }
