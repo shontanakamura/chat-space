@@ -22,6 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -61,4 +62,3 @@ has_many :user_groups
 ### Association
 belongs_to :user 
 belongs_to :group
-
