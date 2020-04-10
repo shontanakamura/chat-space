@@ -111,16 +111,69 @@
     }
       
     }   
-    &__message {
+    &__messages {
     height: calc(100vh - 190px);
     background-color: #fafafa;
-    
-    
-    
+    padding: 46px 40px;
+      .chat-message {
+        padding-bottom: 40px;
+      }
+      .message__upper-info  {
+        display: flex;
+        margin-bottom: 12px;
+        .message__upper-info__talker{
+          color: #333333;
+          font-size: 16px;
+        }
+        .message__upper-info__data {
+          color: #999999
+        } 
+      }
+        .message__text {
+          font-size: 14px;
+          color: #434A54;
+        }
   }
     &__form {
       background-color: #d2d2d2;
       height: 90px;
+      padding: 20px 40px;
+        .new__message {
+          display: flex;
+          .input-box {
+            display: flex;
+            width: 100%;
+            position: relative;
+            &__text {
+              height: 50px;
+              width: 100%;
+              color: #434a54;
+              border-style: none;
+              padding: 0 40px 0 10px;
+            }
+            &__image {
+              position: absolute;
+              top:10px;
+              right: 10px;
+              cursor: pointer;
+              font-size: 1.3rem;
+
+              &__file {
+                display: none;
+              }
+            }
+           }
+          .submit-btn {
+            width: 100px;
+            height: 50px;
+            padding: 0 30px;
+            margin-left: 15px;
+            background-color: #38aef0;
+            color: white;
+            cursor: pointer;
+          }
+         
+        }
     }
   }
 
