@@ -34,13 +34,15 @@
            list-style: none;
            justify-content: flex-end;
             &__menu__new__group {
-            a {color: #ffffff;
-            }
-            .fas fa-edit{
-              margin: 0 5 0 0px;
+            a {
+              color: #ffffff;
+              text-decoration: none;
+              .fas fa-edit icon {
+                margin: 0 5 0 0px;
+              }
             }
           }
-            ＆__menu__new__edit__user {
+            ＆box__menu__new__edit__user {
             a {color: #ffffff;
             }
           }
@@ -52,23 +54,21 @@
       height: calc(100vh - 100px);
       padding: 20px;
       margin-bottom: 40px;
-      .group {
-        color: white;
-        text-decoration: none;
-        margin-bottom: 40px;
-          &__group-name {
-              font-size: 15px;
-              margin-bottom: 5px;
+          .group {
+            margin-bottom: 40px; 
+            a {
+              text-decoration: none;
+              color: white;
+            &__name {
+                font-size: 15px;
+                margin-bottom: 5px;
+            } 
+            &__message {
+              font-size: 11px;
+            }
+           } 
           }
-          &__latest-message {
-            font-size: 11px;
-        }
-      }
     }
-
-
-
-
   }
   .chat-main {
     width: calc(100vw - 300px);
