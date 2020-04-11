@@ -2,14 +2,14 @@
   .side-header
     .side-header__box
       %P.side-header__box__user__name
-        masa
+        = current_user.name
       %ul.side-header__box__menu
         %li.side-header__box__menu__new__group
           = link_to "#" do
             = icon('fas', 'edit')
         %li.side-header__box__menu__new__edit__user
-          = link_to "#" do
-            = icon('fas', 'cog')
+        = link_to edit_user_path(current_user) do
+          = icon('fas', 'cog', class: 'icon')
   .groups
     = link_to "#", class:"group" do
       %p.group-group-name tech camp
