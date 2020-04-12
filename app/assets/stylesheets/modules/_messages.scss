@@ -33,20 +33,24 @@
            display: flex;
            list-style: none;
            justify-content: flex-end;
-            &__menu__new__group {
+            &__new__group {
+              a {
+                text-decoration: none;
+                .icon {
+                  margin: 0 5 0 0px;
+                  color: #ffffff;
+                }
+              }
+            }
+            .side-header__box__menu__new__edit__user {
             a {
-              color: #ffffff;
-              text-decoration: none;
-              .fas fa-edit icon {
-                margin: 0 5 0 0px;
+              .icon {
+                color: white;
+                text-decoration: none;
               }
             }
           }
-            ＆box__menu__new__edit__user {
-            a {color: #ffffff;
-            }
-          }
-         }
+        }
       }
     }
     .groups {
@@ -54,6 +58,7 @@
       height: calc(100vh - 100px);
       padding: 20px;
       margin-bottom: 40px;
+      
           .group {
             margin-bottom: 40px; 
             a {
@@ -68,8 +73,9 @@
             }
            } 
           }
-    }
+    } 
   }
+  
   .chat-main {
     width: calc(100vw - 300px);
     float: right; 
@@ -92,12 +98,9 @@
             font-size: 12px;
             color: #999999;
             list-style: none;
-            .main-header__left-box__member-list__member {
-
-            }
           }
       }
-    .main-header__edit-btn {
+      .main-header__edit-btn {
       font-size: 16px;
       color: #38aef0;
       border: solid 1px #38aef0;
