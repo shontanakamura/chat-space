@@ -34,10 +34,10 @@ has_many :comments
 has_many :groups through:  :user_groups
 has_many :user_groups
 
-## commentsテーブル
+## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|comment|text|
+|content|string|
 |image|string|
 |user_id|integer|null:false,foreign_key: true|
 ｜group_id|integer|null:false,foreign_key: true|
