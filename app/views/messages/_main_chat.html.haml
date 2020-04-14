@@ -2,15 +2,17 @@
   .chat-main__header
     .main-header__left-box
       .main-header__left-box__current-group
-        k
+        = @group.name
       %ul.main-header__left-box__member-list 
         member:
         %li.main-header__left-box__member-list__member
-          masa
+          -  @group.users.each do |user|
+            = user.name
+        
     .main-header__edit-btn 
-      = link_to "Edit","#"
+      = link_to "Edit", edit_group_path(current_user)
   .chat-main__messages
-    = render @messages
+    = render @messages 
   .chat-main__form
     = form_for [@group, @message] do |f|
       = f.text_field :content, class: 'input-box', placeholder: 'type a message'
