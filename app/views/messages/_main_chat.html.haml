@@ -10,14 +10,7 @@
     .main-header__edit-btn 
       = link_to "Edit","#"
   .chat-main__messages
-    .chat-message
-      .message__upper-info
-        %p.message__upper-info__talker
-          masa
-        %p.message__upper-info__data
-          2020/04/10(fri) 11:00:00
-      .message__text
-        こんにちは
+    = render @messages
   .chat-main__form
     = form_for [@group, @message] do |f|
       = f.text_field :content, class: 'input-box', placeholder: 'type a message'
