@@ -122,22 +122,22 @@
     overflow: scroll;
       .chat-message {
         padding-bottom: 40px;
-      }
-      .message__upper-info  {
-        display: flex;
-        margin-bottom: 12px;
-        .message__upper-info__talker{
-          color: #333333;
-          font-size: 16px;
+        .message__upper-info  {
+          display: flex;
+          margin-bottom: 12px;
+          p.message__upper-info__talker{
+            color: #333333;
+            font-size: 16px;
+          }
+          p.message__upper-info__data {
+            color: #999999
+          } 
         }
-        .message__upper-info__data {
-          color: #999999
-        } 
-      }
-        .message__text {
+        p.message__text {
           font-size: 14px;
           color: #434A54;
         }
+     }
   }
     .chat-main__form {
       background-color: #d2d2d2;
