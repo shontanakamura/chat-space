@@ -58,18 +58,20 @@
     height: calc(100vh - 100px);
     padding: 20px;
     margin-bottom: 40px;
-    .group {
-      text-decoration: none;
-      color: white;
+    .group-list {
       margin-bottom: 40px; 
-      p.group__name {
-        font-size: 15px;
-        margin-bottom: 5px;
-      } 
-      p.group__message {
-        font-size: 11px;
-        }
-      } 
+      .group {
+        text-decoration: none;
+        color: white;
+        p.group__name {
+          font-size: 15px;
+          margin-bottom: 5px;
+        } 
+        p.group__message {
+          font-size: 11px;
+          }
+        } 
+      }
     } 
   }
   
