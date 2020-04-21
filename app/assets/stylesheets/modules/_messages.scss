@@ -53,28 +53,25 @@
         }
       }
     }
-    .groups {
-      background-color: #2f3e51;
-      height: calc(100vh - 100px);
-      padding: 20px;
-      margin-bottom: 40px;
-      
-          .group {
-            margin-bottom: 40px; 
-            a {
-              text-decoration: none;
-              color: white;
-            &__name {
-                font-size: 15px;
-                margin-bottom: 5px;
-            } 
-            &__message {
-              font-size: 11px;
-            }
-           } 
-          }
+  .groups {
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+    padding: 20px;
+    margin-bottom: 40px;
+    .group {
+      text-decoration: none;
+      color: white;
+      margin-bottom: 40px; 
+      p.group__name {
+        font-size: 15px;
+        margin-bottom: 5px;
       } 
-    }
+      p.group__message {
+        font-size: 11px;
+        }
+      } 
+    } 
+  }
   
   .chat-main {
     width: calc(100vw - 300px);
@@ -109,9 +106,7 @@
       padding: 0 20px;
       height: 40px;
       line-height: 40px;
-      a {
-        text-decoration: none;
-      }
+      text-decoration: none;
     }
       
     }   
@@ -130,6 +125,7 @@
             font-size: 16px;
           }
           p.message__upper-info__data {
+            font-size: 12px;
             color: #999999
           } 
         }
@@ -143,31 +139,49 @@
       background-color: #d2d2d2;
       height: 90px;
       padding: 20px 40px;
-      .new_message{
+
+      form{
         display: flex;
-        .input-box {
-          width: 100%;
-        &__image {
-          height: 50px;
-          color: #434a54;
-          border-style: none;
-          padding: 0 40px 0 10px;
+        width:100%;
+
+        .form{
+          width:100%;
+          // position:relative;
+        
+        // .input-box {
+          // width: 100%;
           position: relative;
-          &__text {
-            top:10px;
-            right: 80px;
-            cursor: pointer;
-            font-size: 1.3rem;
+
+          &__message {
+            width: 100%;
+            height: 50px;
+            color: #434a54;
+            border-style: none;
+            padding: 0 40px 0 10px;
+            // position: relative;
+          }
+            // position: relative;
+          &__picture {
             position: absolute;
-            .icon { 
-              display: inline-block;
+            top:10px;
+            right: 10px;
+            cursor: pointer;
+              // font-size: 1.3rem;
+           
+            
+            &__icon { 
+              font-size: 1.3rem;
+              // display: inline-block;
             }
-            .input-box__image__file {
+            &__file {
                 display: none;
               }
+            
             }
-          }
-        }
+          
+          
+      }
+    }
       .submit-btn {
         width: 100px;
         height: 50px;
@@ -179,7 +193,6 @@
       } 
     }
    }
-  }
   
 
 

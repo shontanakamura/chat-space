@@ -8,16 +8,15 @@
         %li.main-header__left-box__member-list__member
           -  @group.users.each do |user|
             = user.name
-        
-    .main-header__edit-btn 
-      = link_to "Edit", edit_group_path(current_user)
+    = link_to "Edit", edit_group_path(current_user), class:'main-header__edit-btn'
+
   .chat-main__messages
     = render @messages 
   .chat-main__form
     = form_for [@group, @message] do |f|
-      = f.text_field :content, class: 'input-box', placeholder: 'type a message'
-      .input-box__image
-        = f.label :image, class: 'input-box__image__text' do
-          = icon('fas', 'image', class: 'icon')
-          = f.file_field :image, class: 'input-box__image__file'
+      .form
+        = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+        = f.label :image, class: 'form__picture' do
+          = icon('fas', 'image', class: 'form__picture___icon')
+          = f.file_field :image, class: 'form__picture__file'
       = f.submit 'Send', class: 'submit-btn'
